@@ -652,7 +652,8 @@ h6 {
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 2
+  z-index: 2;
+  width: 100%
 }
 .contact__action input {
   border-radius: 20px;
@@ -667,7 +668,9 @@ h6 {
   line-height: normal;
   letter-spacing: -1.03px;
   text-transform: uppercase;
-  padding-bottom: 1.125rem
+  padding-bottom: 1.125rem;
+  display: flex;
+  flex-direction: column
 }
 .contact-action__subtitle {
   color: #141313;
@@ -683,10 +686,12 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem
+  margin-top: 2rem;
+  width: 100%
 }
 .title-bold {
-  font-size: 160px
+  font-size: 160px;
+  line-height: 195px
 }
 .name {
   margin-bottom: 1.5rem
@@ -1011,7 +1016,8 @@ h6 {
   .contact-action__title {
     text-align: center;
     line-height: 60px;
-    padding-bottom: 0
+    padding-bottom: 0;
+    font-size: 49px
   }
   .contact-action__subtitle {
     font-size: 14px;
@@ -1020,7 +1026,8 @@ h6 {
   }
   .title-bold {
     text-align: center;
-    line-height: 195px
+    font-size: 75px;
+    line-height: 91px
   }
   .fb-contact {
     left: 10px
@@ -1115,16 +1122,6 @@ h6 {
   @supports not (font-size:clamp(1.25rem ,0.1470588235rem + 4.9019607843vw ,2.5rem)) {
     .info-hero__price {
       font-size: calc(1.25rem + 1.25 * (100vw - 22.5rem)/ 25.5)
-    }
-  }
-  @supports (padding-bottom:clamp(2.8125rem ,2.3161764706rem + 2.2058823529vw ,3.375rem)) {
-    .info-hero__price {
-      padding-bottom: clamp(2.8125rem ,2.3161764706rem + 2.2058823529vw ,3.375rem)
-    }
-  }
-  @supports not (padding-bottom:clamp(2.8125rem ,2.3161764706rem + 2.2058823529vw ,3.375rem)) {
-    .info-hero__price {
-      padding-bottom: calc(2.8125rem + .5625 * (100vw - 22.5rem)/ 25.5)
     }
   }
   @supports (width:clamp(5.25rem ,1.2242647059rem + 17.8921568627vw ,9.8125rem)) {
@@ -1315,26 +1312,6 @@ h6 {
   @supports not (padding:clamp(0.9375rem ,0.0551470588rem + 3.9215686275vw ,1.9375rem)) {
     .contact__action input {
       padding: calc(.9375rem + 1 * (100vw - 22.5rem)/ 25.5)
-    }
-  }
-  @supports (font-size:clamp(3.0625rem ,0.25rem + 12.5vw ,6.25rem)) {
-    .contact-action__title {
-      font-size: clamp(3.0625rem ,.25rem + 12.5vw ,6.25rem)
-    }
-  }
-  @supports not (font-size:clamp(3.0625rem ,0.25rem + 12.5vw ,6.25rem)) {
-    .contact-action__title {
-      font-size: calc(3.0625rem + 3.1875 * (100vw - 22.5rem)/ 25.5)
-    }
-  }
-  @supports (font-size:clamp(4.9375rem ,0.4705882353rem + 19.8529411765vw ,10rem)) {
-    .title-bold {
-      font-size: clamp(4.9375rem ,.4705882353rem + 19.8529411765vw ,10rem)
-    }
-  }
-  @supports not (font-size:clamp(4.9375rem ,0.4705882353rem + 19.8529411765vw ,10rem)) {
-    .title-bold {
-      font-size: calc(4.9375rem + 5.0625 * (100vw - 22.5rem)/ 25.5)
     }
   }
 }
