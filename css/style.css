@@ -334,7 +334,7 @@ h6 {
 .banner-hero__man {
   position: absolute;
   left: .625rem;
-  top: .625rem;
+  top: .4375rem;
   z-index: 2
 }
 .banner-hero__name {
