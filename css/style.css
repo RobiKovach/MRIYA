@@ -794,7 +794,7 @@ h6 {
 }
 @media (max-width:412px) {
   .description-correct {
-    display: block
+    display: block!important
   }
 }
 @media (max-width:47.99875em) {
